@@ -1,12 +1,17 @@
 <!DOCTYPE html>
- <html>
- <head>
-	 <title>Untitled</title>
-	 <meta charset="UTF-8"/>
-	 <link rel="stylesheet" href="" type="text/css"/>
- </head>
-	 <body>
-	<h1>Sty.xyz</h1>
-	<h2>Testing site</h2>
-	 </body>
- </html>
+<html>
+<head>
+    <title>Message Example</title>
+</head>
+<body>
+    <script>
+        function receiveMessage(event) {
+            const message = event.data.message;
+            console.log('Message received:', message);
+            // Process the received message or perform any desired actions
+        }
+
+        window.addEventListener('message', receiveMessage);
+    </script>
+</body>
+</html>
